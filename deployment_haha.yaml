@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    # ..
+  labels:
+    # ..
+spec:
+  replicas: 1
+  revisionHistoryLimit: 5
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 50%
+      maxUnavailable: 0%
+# ..
+      containers:
+        - name: dataprd-rec-api
+          image: 12345.ecr.amazon.com/api-service:d2034693db46c76b2f6fba258ccba08e3c96dd97
+          imagePullPolicy: Always
+          ports:
