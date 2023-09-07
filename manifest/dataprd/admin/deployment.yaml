@@ -16,6 +16,6 @@ spec:
 # ..
       containers:
         - name: dataprd-rec-api
-          image: 12345.ecr.amazon.com/dev-dataprd-admin:devel-1a88415-2023-09-06-18-48-29
+          image: 12345.ecr.amazon.com/dev-dataprd-admin:devel-2603571-2023-09-07T03:55:12.999Z
           imagePullPolicy: Always
           ports:
