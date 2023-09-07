@@ -16,6 +16,6 @@ spec:
 # ..
       containers:
         - name: dataprd-rec-api
-          image: 12345.ecr.amazon.com/${ECR_PATH}:${IMAGE_TAG}
+          image: 12345.ecr.amazon.com/(_ECR_PATH_):(_IMAGE_TAG_)
           imagePullPolicy: Always
           ports:
